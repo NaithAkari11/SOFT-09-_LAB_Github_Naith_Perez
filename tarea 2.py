@@ -146,37 +146,6 @@ if diaSiguiente > diasDelMes:
 
 print(f"\nLa fecha de mañana es: {diaSiguiente}/{mesSiguiente}/{anioSiguiente}")
 
-#Ejecicio 5
-diaActual=int(input("Ingrese el día de hoy: "))
-mesActual=int(input("Ingrese el mes actual (1-12): "))
-anioActual=int(input("Ingrese el año actual: "))
-
-
-diaCalculado=diaActual
-mesCalculado=mesActual
-anioCalculado=anioActual
-
-
-for i in range(8):
-    diaCalculado += 1
-    
-    diasDelMes = 0
-    if mesCalculado == 2:
-        diasDelMes = 28
-    elif mesCalculado == 4 or mesCalculado == 6 or mesCalculado == 9 or mesCalculado == 11:
-        diasDelMes = 30
-    else:
-        diasDelMes = 31
-        
-    if diaCalculado > diasDelMes:
-        diaCalculado = 1
-        mesCalculado += 1
-        if mesCalculado > 12:
-            mesCalculado = 1
-            anioCalculado += 1
-print(f"\nLa fecha dentro de 8 días será: {diaCalculado}/{mesCalculado}/{anioCalculado}")
-
-
 
 
 
